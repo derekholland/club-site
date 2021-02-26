@@ -1,14 +1,62 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
-
+/* General Styles */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
-/* To keep the footer at the bottom of the page */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+#header {
+  background: 
+    /* top, transparent red, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */ url(imgs/squat.jpg) center center/cover;
+  height: 100vh;
+}
+
+/* nav */
+#navbar {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+#navbar ul {
+  border: 1px solid red;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+#navbar ul li {
+  padding: 1rem 1.5rem;
+}
+
+#navbar ul li a {
+  color: greenyellow;
+}
+#navbar span {
+  color: greenyellow;
+}
+#navbar #logo {
+  display: inline-block;
+}
+/* footer/To keep the footer at the bottom of the page */
 #page-container {
   position: relative;
   min-height: 100vh;
